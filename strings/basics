@@ -1,0 +1,130 @@
+-------------------------String Basics----------------------
+Create string
+string s = "hello";
+
+Access character
+s[0]
+
+👉 'h'
+
+String length
+s.size()
+👉 5
+
+Add character to string
+ans += ch;
+
+
+📌 3. Vector of Strings
+Create
+vector<string> strs = {"apple", "bat"};
+
+Access first string
+strs[0]
+👉 "apple"
+
+Access character from string
+strs[0][2]
+👉 'p'
+
+Length of first string
+strs[0].size()
+👉 5
+
+Number of strings
+strs.size()
+👉 2
+
+📌 4. sort()
+Array
+sort(arr, arr + n);
+
+Vector
+sort(nums.begin(), nums.end());
+
+Descending order
+sort(nums.begin(), nums.end(), greater<int>());
+
+
+📌 5. max_element()
+int mx = *max_element(nums.begin(), nums.end());
+
+👉 Returns maximum element
+
+📌 6. min_element()
+int mn = *min_element(nums.begin(), nums.end());
+
+📌 7. reverse()
+reverse(nums.begin(), nums.end());
+
+📌 8. find()
+auto it = find(nums.begin(), nums.end(), target);
+Check if found
+if(it != nums.end())
+
+📌 9. count()
+int cnt = count(nums.begin(), nums.end(), target);
+
+📌 10. accumulate()
+#include <numeric>
+
+int sum = accumulate(nums.begin(), nums.end(), 0);
+
+👉 Sum of all elements
+
+📌 11. lower_bound()
+
+👉 First element >= target
+
+auto it = lower_bound(nums.begin(), nums.end(), target);
+📌 12. upper_bound()
+
+👉 First element > target
+
+auto it = upper_bound(nums.begin(), nums.end(), target);
+📌 13. binary_search()
+
+⚠️ Array/vector must be sorted
+
+bool found = binary_search(nums.begin(), nums.end(), target);
+
+📌 14. next_permutation()
+next_permutation(nums.begin(), nums.end());
+
+📌 15. Important Loops
+Traverse vector
+for(int i = 0; i < nums.size(); i++)
+Traverse string
+for(int i = 0; i < s.size(); i++)
+
+📌 16. Important Conditions
+Character mismatch
+if(first[i] != last[i])
+Index out of bounds
+if(i >= strs[j].size())
+
+📌 17. Important Syntax
+Return vector
+return {i, j};
+Empty vector
+return {};
+Empty string
+string ans = "";
+
+📌 18. Character Basics
+Character datatype
+char ch = 'a';
+String datatype
+string s = "hello";
+
+📌 19. ASCII Tricks
+Convert character position
+ch - 'a'
+Mirror alphabet
+'z' - (ch - 'a')
+
+📌20.MostImportantPatternYouLearnedToday
+Accessingcharactersinvectorofstrings
+strs[j][i]
+means:
+ithcharacterofjthstring
